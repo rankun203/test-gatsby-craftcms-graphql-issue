@@ -19,6 +19,10 @@ I've found a workaround, add an `id` field into `CMS_DefaultImagesVolume`, so th
 }
 ```
 
+The process I took to resolve this issue can be found here:
+
+https://spectrum.chat/gatsby-js/general/customized-resolver-for-images-from-craftql-always-says-query-is-wrong~5506f399-b5f0-4d42-a40d-c8aaf772e929
+
 ## How to run this test
 
 ```bash
