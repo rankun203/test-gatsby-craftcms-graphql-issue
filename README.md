@@ -10,6 +10,7 @@ I've found a workaround, add an `id` field into `CMS_DefaultImagesVolume`, so th
         heroPicture {
           url
           ... on CMS_DefaultImagesVolume {
+            id
             localImage
           }
         }
