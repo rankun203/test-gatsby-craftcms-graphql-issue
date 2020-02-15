@@ -1,3 +1,24 @@
+UPDATE: 02/15/20
+
+I've found a workaround, add an `id` field into `CMS_DefaultImagesVolume`, so the query becomes:
+
+```graphql
+{
+  cms {
+    entries {
+      ... on CMS_Projects {
+        heroPicture {
+          url
+          ... on CMS_DefaultImagesVolume {
+            localImage
+          }
+        }
+      }
+    }
+  }
+}
+```
+
 ## How to run this test
 
 ```bash
@@ -42,7 +63,7 @@ With data.
 yarn install && yarn start
 ```
 
-Navigate to http://localhost:8000/__graphql, try some queries, 
+Navigate to http://localhost:8000/__graphql, try some queries,
 
 The one I wanted to get it work, but can't is:
 
