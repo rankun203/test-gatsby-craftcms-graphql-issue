@@ -17,7 +17,6 @@ exports.createResolvers = async ({
         type: "File",
         async resolve(parent) {
           let url = parent.url
-          if (url.startsWith("//")) url = `https:${url}`
 
           return createRemoteFileNode({
             url: encodeURI(url),
